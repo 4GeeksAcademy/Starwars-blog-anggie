@@ -3,6 +3,10 @@
     height: 50px;
 }
 
-#main-nav {
+.navbar {
     padding: 20px 60px;
+}
+
+#card-wrap {
+    margin-left: 10px;
 }

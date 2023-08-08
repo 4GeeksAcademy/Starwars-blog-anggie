@@ -1,10 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import { Home } from "./views/home";
-// import { Navbar } from "./component/navbar";
-
 import injectContext from "./store/appContext";
+import Navbar from "./component/Navbar";
 
 
 
@@ -18,10 +16,10 @@ const Layout = () => {
 	return (
 		<div>
 			<BrowserRouter basename={basename}>
-				{/* <Navbar /> */}
+				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					{/* <Route path="/" element={< />} /> */}
+					<Route path="/Navbar" element={<Navbar />} /> 
 					<Route path="*" element={<h1>Not found!</h1>} />
 				</Routes>
 			</BrowserRouter>
